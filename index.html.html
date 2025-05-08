@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รักตัวเองวันละกิโล (เมตรก็ยังดี)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>รักตัวเองวันละกิโล (เมตรก็ยังดี)</h1>
+  <form id="runForm">
+    <input type="text" id="name" placeholder="ชื่อ" required>
+    <input type="date" id="date" required>
+    <input type="number" id="distance" step="0.01" placeholder="ระยะทาง (กม.)" required>
+    <input type="file" id="image" accept="image/*">
+    <button type="submit">บันทึก</button>
+  </form>
+
+  <h2>บันทึกการวิ่ง</h2>
+  <input type="text" id="search" placeholder="ค้นหาชื่อ...">
+  <table id="runTable">
+    <thead>
+      <tr>
+        <th>ลำดับ</th>
+        <th>ชื่อ</th>
+        <th>วันที่</th>
+        <th>ระยะทาง</th>
+        <th>ภาพ</th>
+        <th>ลบ</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>ระยะทางสะสม</h2>
+  <ul id="totalList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
